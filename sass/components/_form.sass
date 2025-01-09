@@ -1,0 +1,55 @@
+.contact-form
+  max-width: 42.8rem
+
+.input-box
+  margin-bottom: 1rem
+  label
+    display: block
+    margin-bottom: 5px
+  input[type="text"], input[type="email"], textarea
+    width: 100%
+    padding: 1.6rem 2rem
+    border: .2rem solid $color-gray-100
+    border-radius: 1.6rem
+    &:focus
+      outline: none
+      border-color: $color-link-text
+    &::placeholder
+      color: $color-gray-120
+      font-size: 1.2rem
+      line-height: 1.4
+      letter-spacing: .04rem
+  textarea
+    resize: vertical /* Позволяет изменять размер только по вертикали */
+    margin-bottom: 3rem
+    min-height: 8rem
+
+
+.toggle
+  position: relative
+  &-box
+    max-width: 25rem
+  input[type="checkbox"]
+    left: 0
+    width: 2.4rem
+    height: 2.4rem
+    position: absolute
+    top: 1rem
+.privacy
+  font-size: 1.2rem
+  width: 18rem
+  position: absolute
+  left: 3.5rem
+  top: .5rem
+
+.button
+  color: $color-white
+  padding: 1.3rem 8.1rem
+  border: solid .2rem $color-link-text
+  border-radius: 3.2rem
+  cursor: pointer
+  background-color: $color-link-text
+  &[disabled]
+    background-color: $chip-bg-color
+    border: solid .2rem $color-link-text
+    color: $color-link-text

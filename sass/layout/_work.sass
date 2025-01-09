@@ -1,0 +1,86 @@
+.work
+  height: 85rem
+  background-color: $color-gray-80
+  padding-top: 12rem
+  position: relative
+  &__left-right
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+  &__title
+    margin-bottom: 8rem
+  &__left
+    grid-column: 1 / 2
+  &__right
+    grid-column: 2 / 3
+  &__block-line
+    position: absolute
+    height: 19rem
+    background-color: $color-black-text
+    width: 100vw
+    bottom: 0
+    &-title
+      @include text-gradient
+      position: absolute
+      text-transform: uppercase
+      font-size: 2.8rem
+      font-weight: 900
+      max-width: 35rem
+      margin-bottom: 2rem
+      top: 3.8rem
+      left: 50%
+      z-index: 5
+    &-text
+      position: absolute
+      left: 50%
+      color: $color-white
+      top: 12.6rem
+      z-index: 5
+    &-link
+      position: absolute
+      right: 0
+      z-index: 5
+      top: 4.5rem
+  &__block-primary-100
+    position: absolute
+    background-color: $color-link-text
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%)
+    height: 19rem
+    width: 57rem
+    left: 7%
+    z-index: 0
+  &__img
+    position: absolute
+    bottom: 0
+    left: 7%
+    z-index: 1
+
+.video
+  position: relative
+  width: 48.8rem
+  height: 28rem
+  &__img
+    position: absolute
+    top: 0
+    left: 0
+  &__play
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+.part
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin-bottom: 2.5rem
+  &__number
+    display: inline-block
+    color: $color-link-text
+    padding: 1.2rem
+    border-radius: 50%
+    background-color: $color-white
+    margin-right: 2rem
+  &__text
+    margin-left: 6.8rem
+
+

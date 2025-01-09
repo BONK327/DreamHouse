@@ -1,0 +1,72 @@
+.faq
+  height: 78rem
+  padding: 12rem 0
+  &__body
+    display: grid
+    grid-template-columns: 65rem 49rem
+    column-gap: 6rem
+    margin-top: 6rem
+  &__form
+    background-color: $color-gray-80
+    border-radius: 3.2rem
+    padding: 4rem 3rem
+    &-title
+      margin-bottom: .8rem
+    &-text
+      max-width: 42rem
+      margin-bottom: 3rem
+
+.question-answer
+  border-bottom: solid .2rem $color-gray-100
+
+.question
+  cursor: pointer
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  padding: 2rem 0
+  position: relative
+  &__text
+  &__img
+    right: 1rem
+    position: absolute
+
+.answer
+  padding: 2rem
+  background-color: $chip-bg-color
+  &__list
+    align-items: center
+    &-title
+      margin-bottom: 2rem
+      color: $color-link-text
+  &__item
+    font-weight: 300
+    margin-bottom: 2rem
+    align-items: center
+    position: relative
+    &-text
+      margin-left: 3rem
+.span1
+  font-size: 3rem
+  margin-right: 1rem
+  font-weight: 500
+  position: absolute
+  color: $color-link-text
+.span2
+  font-weight: 500
+  margin-right: 1rem
+  margin-left: 3rem
+.row
+  display: flex
+  flex-direction: row
+
+
+.accordion
+  &__link
+    margin-top: 2rem
+    color: $color-link-text
+    max-width: 11rem
+    display: flex
+    gap: .8rem
+

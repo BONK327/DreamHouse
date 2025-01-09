@@ -1,0 +1,52 @@
+.bestseller
+  height: 66.5rem
+  padding: 12rem 0
+  &__title
+    margin-bottom: 6rem
+    max-width: 50rem
+  &__projects
+    position: absolute
+    display: flex
+    flex-direction: row
+    overflow: hidden
+    gap: 2rem
+
+.project
+  position: relative
+  width: 38.7rem
+  height: 31rem
+  border-radius: .8rem
+  overflow: hidden
+  &-feature
+    align-items: center
+  &--padding
+    padding: 3rem 2rem 2rem 3rem
+  &__img
+    position: absolute
+    z-index: -1
+
+.project-price
+  font-weight: 900
+  font-size: 2.8rem
+  line-height: 120%
+  color: $color-white
+  margin-bottom: 1.2rem
+.project-feature, .square-count, .bed-count, .bath-count
+  display: flex
+  flex-direction: row
+  max-width: 20rem
+.square-count, .bed-count, .bath-count
+  margin-right: 1.6rem
+.square, .bed, .bath
+  margin-right: 1.2rem
+.count
+  font-size: 1.6rem
+  font-weight: 500
+  line-height: 140%
+  color: $color-white
+.project-link
+  position: absolute
+  bottom: 2rem
+  right: 2rem
+  cursor: pointer
+
